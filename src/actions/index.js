@@ -70,7 +70,7 @@ export const createSignalChannel = () => {
         }
       }
 
-      getUserMedia({audio: true, video: true},
+      navigator.getUserMedia({audio: true, video: true},
         (stream) => {
           peer.addStream(stream)
           dispatch(setStream(1, stream))

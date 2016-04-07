@@ -8,6 +8,7 @@ import App from './components/App.jsx'
 import appReducer from './reducers/index'
 import normalize from 'normalize.css'
 import milligram from 'milligram'
+import './libs/adapter.js'
 
 const loggerMiddleware = createLogger()
 const store = createStore(
